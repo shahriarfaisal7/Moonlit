@@ -1,0 +1,278 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%), url(moon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+.icon h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-left: -90px;
+    float: left;
+    content: '';
+    animation: logos 1s infinite ease-in-out;
+}
+.icon span{
+    color: aqua;
+}
+.menu{
+    width: 400px;
+    height: 70px;
+    padding-left: 47%;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li{
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 21px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+    color: rgb(41, 255, 255);
+}
+
+.search{
+    width: 330px;
+    margin-left: 77%;
+    float: left;
+}
+.search:hover{
+    transform: scale(1.1);
+}
+.srch{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid aqua;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    border-right: none;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 13px;
+    float: left;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: aqua;
+    padding: 8px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid aqua;
+    font-size: 15px;
+    color: #000;
+    margin-top: 13px;
+}
+
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.content .par span{
+    color: aqua;
+}
+.content h1{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 15%;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.content h1 span{
+    color: aqua;
+    font-size: 60px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    border: none;
+    background: aqua;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+.content .cn a{
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+
+}
+.cn:hover{
+    background-color: #e4e4e4;
+}
+
+.form{
+    width: 300px;
+    height: 470px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
+    position: absolute;
+    left: 70%;
+    top: 200px;
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 220px;
+    height: auto;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(84, 255, 255);
+    margin: 30px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid aqua;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 10px;
+}
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+}
+.form input:hover{
+    transform: scale(1.1);
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: rgb(31, 189, 189);
+    color: #000;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnn a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btnn:hover{
+    background-color: rgb(145, 255, 242);
+}
+
+.form .link{
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+.form .link a{
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+.liw{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 550;
+
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    color: white;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.icons i:hover{
+    color: aqua;
+    transform: scale(1.1);
+}
+
+/* animated sectiopn------------- */
+
+
+@keyframes logos{
+    from{
+      transform: scale(0.5);
+    }
+    to{
+      transform: scale(1);
+    }
+    
+  }
+
